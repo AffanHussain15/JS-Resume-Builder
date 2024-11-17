@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -59,3 +60,66 @@
     <script src="script.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div id="start">
+        <h1>Create Resume</h1>
+        <button id="start-btn">Start</button>
+      </div>
+      <div id="resume">
+        <div>
+          <h3>Personal Information</h3>
+          <input type="text" id="name" placeholder="Enter Your Name" />
+          <input type="text" id="email" placeholder="Enter Your Email" />
+          <input type="text" id="phone" placeholder="Enter Your Phone Number" />
+          <input type="text" id="address" placeholder="Enter Your Address" />
+        </div>
+        <div>
+          <h3>Career Objective</h3>
+          <textarea
+            placeholder="Enter Your Career Objective"
+            id="career"
+          ></textarea>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <input type="text" id="degree" placeholder="Degree" />
+          <input type="text" id="institution" placeholder="Institution" />
+          <input type="text" id="completion" placeholder="Year of Completion" />
+          <input type="text" id="grade" placeholder="Grade/Percentage" />
+        </div>
+        <div>
+          <h3>Work Experience</h3>
+          <input type="text" id="job" placeholder="Job Title" />
+          <input type="text" id="company" placeholder="Company Name" />
+          <input type="text" id="duration" placeholder="Duration" />
+          <textarea id="description" placeholder="Job Description"></textarea>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <textarea
+            id="skill"
+            placeholder="Enter your skills, separated by commas"
+          ></textarea>
+        </div>
+        <button type="button" onclick="createResume()">Create Resume</button>
+      </div>
+    </div>
+    <section id="resume-section" style="display: none">
+      <h2>Generated Resume</h2>
+      <div id="resume-content"></div>
+      <button onclick="window.print()">Print Resume</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
+>>>>>>> 6731e02 (Updates Files with Latest Changes)
